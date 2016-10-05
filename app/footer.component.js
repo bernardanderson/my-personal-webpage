@@ -9,21 +9,18 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-//import {NavBarComponent} from './navbar.component';  
-//import {FooterComponent} from './footer.component';  
-var AppComponent = (function () {
-    function AppComponent() {
+var FooterComponent = (function () {
+    function FooterComponent() {
     }
-    AppComponent = __decorate([
+    FooterComponent = __decorate([
         core_1.Component({
-            selector: 'body',
-            //directives: [NavBarComponent, FooterComponent],
-            template: "\n        <h1>This is a test</h1>\n    ",
-            styleUrls: ['css/style.css']
+            selector: 'footer-bar',
+            templateUrl: 'partials/footer.html',
+            styleUrls: ['css/footer.css']
         }), 
         __metadata('design:paramtypes', [])
-    ], AppComponent);
-    return AppComponent;
+    ], FooterComponent);
+    return FooterComponent;
 }());
-exports.AppComponent = AppComponent;
-//# sourceMappingURL=app.component.js.map
+exports.FooterComponent = FooterComponent;
+//# sourceMappingURL=footer.component.js.map

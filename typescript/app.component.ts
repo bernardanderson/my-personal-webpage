@@ -1,8 +1,18 @@
-import { Component } from '@angular/core';
+
+import {Component} from '@angular/core';
+//import {NavBarComponent} from './navbar.component';  
+//import {FooterComponent} from './footer.component';  
 
 @Component({
-  selector: 'my-app',
-  template: '<h1>My stinky Angular App</h1>'
+    selector: 'body',
+    //directives: [NavBarComponent, FooterComponent],
+    template: 
+    `
+        <h1>This is a test</h1>
+    `,
+    styleUrls: ['css/style.css']
 })
 
-export class AppComponent { }
+export class AppComponent {
+  
+}

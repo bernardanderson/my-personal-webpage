@@ -1,0 +1,16 @@
+.footer-style {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: #A0A592;
+  position: absolute;
+  height: 5vh;
+  bottom: 0;
+  width: 100vw;
+}
+
+p {
+  color:  #F1F2ED;
+  margin-right: 5rem;
+}
