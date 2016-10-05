@@ -9,16 +9,13 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-//import {NavBarComponent} from './navbar.component';  
-//import {FooterComponent} from './footer.component';  
 var AppComponent = (function () {
     function AppComponent() {
     }
     AppComponent = __decorate([
         core_1.Component({
             selector: 'body',
-            //directives: [NavBarComponent, FooterComponent],
-            template: "\n        <h1>This is a test</h1>\n    ",
+            template: "\n        <nav-bar></nav-bar>\n        <footer-bar></footer-bar>\n    ",
             styleUrls: ['css/style.css']
         }), 
         __metadata('design:paramtypes', [])
