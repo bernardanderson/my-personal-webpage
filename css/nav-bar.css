@@ -1,0 +1,31 @@
+.nav-style {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #A0A592;
+  position: absolute;
+  width: 100vw;
+}
+
+h3 {
+  font-family: 'Doppio One', sans-serif;
+  font-size: 30px;
+  color:  #F1F2ED;
+  line-height: 0.2rem;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  display: inline;
+  padding: 0 2vw 0 2vw;
+}
+
+a {
+  font-size: 22px;
+  text-decoration: none;
+  color: #F1F2ED;
+}

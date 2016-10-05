@@ -1,8 +1,13 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 
 @Component({
-  selector: 'my-app',
-  template: '<h1>My stinky Angular App</h1>'
+    selector: 'body',
+    template: 
+    `
+        <nav-bar></nav-bar>
+        <footer-bar></footer-bar>
+    `,
+    styleUrls: ['css/style.css']
 })
 
 export class AppComponent { }
