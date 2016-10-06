@@ -9,3 +9,11 @@ body {
   margin: 0;
   background-color: #F1F2ED
 }
+
+.navholder {
+  height: 15vh;
+}
+
+div {
+  flex-direction: column;  
+}

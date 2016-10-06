@@ -2,11 +2,7 @@ import {Component} from '@angular/core';
 
 @Component({
     selector: 'body',
-    template: 
-    `
-        <nav-bar></nav-bar>
-        <footer-bar></footer-bar>
-    `,
+    templateUrl: 'partials/app.html',
     styleUrls: ['css/style.css']
 })
 
