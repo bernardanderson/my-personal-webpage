@@ -1,11 +1,16 @@
-<nav class="nav-style">
-  <div>
-    <h3>Bernard</h3>
-    <h3>Anderson.me</h3>
+<nav>
+  <div class="col s12">
+    <div>
+      <h3>Bernard</h3>
+      <h3>Anderson.me</h3>
+    </div>
+    <div>
+      <ul>
+        <li *ngFor="let item of navItems">
+          <a href="#">{{item}}</a>
+        </li>
+      </ul>
+    </div>
   </div>
-    <ul>
-      <li *ngFor="let item of navItems">
-        <a href="#">{{item}}</a>
-      </li>
-    </ul>
+    
 </nav>
