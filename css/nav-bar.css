@@ -2,11 +2,11 @@ nav {
   background-color: #A0A592;
 }
 
-h3 {
+p {
   font-family: 'Doppio One', sans-serif;
   font-size: 30px;
+  display: inline;
   color:  #F1F2ED;
-  line-height: 0.2rem;
 }
 
 ul {
