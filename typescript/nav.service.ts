@@ -1,17 +1,17 @@
 import { Injectable } from '@angular/core';
 import { Subject }    from 'rxjs/Subject';
 
+
+export interface NavBar {
+  navItem: string;
+}
+
 @Injectable() 
-export class NavService {
+class NavService {
 
-    navMessage: string;
+    navMessage: NavBar = { navItem: "Hello Nav Bar" };
 
-    private navChangeSource: Subject<string> = new Subject<string>();
-
-    navChange$ = this.navChangeSource.asObservable();
-
-    announceNavChange(sentNavString: string) {
-        this.navChangeSource.next(sentNavString);
+    change(sentNewString: string) {
+        this.navMessage.navItem = sentNewString;
     }
-
 }
