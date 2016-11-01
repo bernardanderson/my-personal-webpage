@@ -1,14 +1,8 @@
 <nav>
-  <div class="row">
-    <div class="col s7">
-        <p class="inline">Bernard Anderson.me</p>
-    </div>
-    <div class="col s5">
-        <ul>
-          <li *ngFor="let item of navItems">
-            <a href="#">{{item}}</a>
-          </li>
-        </ul> 
-    </div>
+  <div class="ui attached segment darker-green">
+    <p class="">Bernard Anderson.me</p>
+  </div>
+  <div class="ui bottom attached buttons">
+    <div *ngFor="let item of navItems" class="ui darker-green button">{{item}}</div>
   </div>
 </nav>

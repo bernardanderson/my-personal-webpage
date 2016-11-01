@@ -1,7 +1,3 @@
-nav {
-  background-color: #A0A592;
-}
-
 p {
   font-family: 'Doppio One', sans-serif;
   font-size: 30px;
@@ -9,17 +5,7 @@ p {
   color:  #F1F2ED;
 }
 
-ul {
-  list-style-type: none;
-}
-
-li {
-  display: inline;
-  padding: 0 2vw 0 2vw;
-}
-
-a {
-  font-size: 22px;
-  text-decoration: none;
-  color: #F1F2ED;
+.darker-green {
+  background-color: #A0A592;
+  color:  #F1F2ED;
 }

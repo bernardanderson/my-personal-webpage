@@ -8,6 +8,6 @@ import {Component} from '@angular/core';
 
 export class NavBarComponent {
   
-  navItems: string[] = ["Home", "Key Projects", "About"];
+  navItems: string[] = ["Home", "Key Projects", "Blog", "Contact Info"];
 
 }

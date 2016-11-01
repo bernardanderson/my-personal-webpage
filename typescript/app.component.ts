@@ -6,4 +6,11 @@ import {Component} from '@angular/core';
     styleUrls: ['css/style.css']
 })
 
-export class AppComponent { }
+export class AppComponent { 
+
+    message: string = "Hello There!";
+
+    clicked(sentMessage:string):void {
+        console.log(this.message + sentMessage);
+    }
+}

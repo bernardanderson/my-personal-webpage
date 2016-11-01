@@ -11,7 +11,11 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require('@angular/core');
 var AppComponent = (function () {
     function AppComponent() {
+        this.message = "Hello There!";
     }
+    AppComponent.prototype.clicked = function (sentMessage) {
+        console.log(this.message + sentMessage);
+    };
     AppComponent = __decorate([
         core_1.Component({
             selector: 'body',
