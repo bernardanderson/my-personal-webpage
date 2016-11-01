@@ -9,23 +9,21 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var platform_browser_1 = require('@angular/platform-browser');
-// My Component Imports
-var app_component_1 = require('./app.component');
-var navbar_component_1 = require('./navbar.component');
-var footer_component_1 = require('./footer.component');
-var AppModule = (function () {
-    function AppModule() {
+var NavService = (function () {
+    function NavService() {
+        this.navMessage = "This is Nav!";
     }
-    AppModule = __decorate([
-        core_1.NgModule({
-            imports: [platform_browser_1.BrowserModule],
-            declarations: [app_component_1.AppComponent, navbar_component_1.NavBarComponent, footer_component_1.FooterComponent],
-            bootstrap: [app_component_1.AppComponent, navbar_component_1.NavBarComponent, footer_component_1.FooterComponent]
-        }), 
+    NavService.prototype.updateNavMessage = function (newNavSelection) {
+        this.navMessage = newNavSelection;
+    };
+    NavService.prototype.getNavMessage = function () {
+        return this.navMessage;
+    };
+    NavService = __decorate([
+        core_1.Injectable(), 
         __metadata('design:paramtypes', [])
-    ], AppModule);
-    return AppModule;
+    ], NavService);
+    return NavService;
 }());
-exports.AppModule = AppModule;
-//# sourceMappingURL=app.module.js.map
+exports.NavService = NavService;
+//# sourceMappingURL=nav.service.js.map

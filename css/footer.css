@@ -2,3 +2,11 @@
   background-color: #A0A592;
   color:  #F1F2ED;
 }
+
+div {
+  padding-right: 20px;
+}
+
+p {
+  text-align: right;
+}

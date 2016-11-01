@@ -7,4 +7,7 @@ import {Component} from '@angular/core';
 })
 
 export class FooterComponent {
+
+    copyrightInfo: string = "©2016 Bernard Anderson";
+
 }

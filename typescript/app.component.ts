@@ -1,16 +1,22 @@
-import {Component} from '@angular/core';
+import {Component}      from '@angular/core';
+import { NavService }   from './nav.service';
 
 @Component({
-    selector: 'body',
+    selector: 'main-body',
     templateUrl: 'partials/app.html',
-    styleUrls: ['css/style.css']
+    styleUrls: ['css/style.css'],
+    providers: [ NavService ]
 })
 
 export class AppComponent { 
 
-    message: string = "Hello There!";
+    message: string;
 
-    clicked(sentMessage:string):void {
-        console.log(this.message + sentMessage);
+    constructor(private navService: NavService) { 
+        this.message = navService.navMessage;
+    }
+
+    clicked():void {
+        this.message = this.navService.getNavMessage();
     }
 }

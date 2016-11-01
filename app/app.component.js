@@ -9,20 +9,23 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
+var nav_service_1 = require('./nav.service');
 var AppComponent = (function () {
-    function AppComponent() {
-        this.message = "Hello There!";
+    function AppComponent(navService) {
+        this.navService = navService;
+        this.message = navService.navMessage;
     }
-    AppComponent.prototype.clicked = function (sentMessage) {
-        console.log(this.message + sentMessage);
+    AppComponent.prototype.clicked = function () {
+        this.message = this.navService.getNavMessage();
     };
     AppComponent = __decorate([
         core_1.Component({
-            selector: 'body',
+            selector: 'main-body',
             templateUrl: 'partials/app.html',
-            styleUrls: ['css/style.css']
+            styleUrls: ['css/style.css'],
+            providers: [nav_service_1.NavService]
         }), 
-        __metadata('design:paramtypes', [])
+        __metadata('design:paramtypes', [nav_service_1.NavService])
     ], AppComponent);
     return AppComponent;
 }());

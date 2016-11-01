@@ -9,17 +9,25 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
+var nav_service_1 = require('./nav.service');
 var NavBarComponent = (function () {
-    function NavBarComponent() {
+    function NavBarComponent(navService) {
+        this.navService = navService;
         this.navItems = ["Home", "Key Projects", "Blog", "Contact Info"];
+        this.currentNavItem = "Home";
     }
+    NavBarComponent.prototype.navBarSelects = function (sentNavSelection) {
+        this.navService.updateNavMessage(sentNavSelection);
+        console.log(this.navService.getNavMessage());
+    };
     NavBarComponent = __decorate([
         core_1.Component({
             selector: 'nav-bar',
             templateUrl: 'partials/nav-bar.html',
-            styleUrls: ['css/nav-bar.css']
+            styleUrls: ['css/nav-bar.css'],
+            providers: [nav_service_1.NavService]
         }), 
-        __metadata('design:paramtypes', [])
+        __metadata('design:paramtypes', [nav_service_1.NavService])
     ], NavBarComponent);
     return NavBarComponent;
 }());
