@@ -16,11 +16,10 @@ var AppComponent = (function () {
         this.message = navService.navMessage;
     }
     AppComponent.prototype.clicked = function () {
-        this.message = this.navService.getNavMessage();
     };
     AppComponent = __decorate([
         core_1.Component({
-            selector: 'main-body',
+            selector: 'body',
             templateUrl: 'partials/app.html',
             styleUrls: ['css/style.css'],
             providers: [nav_service_1.NavService]

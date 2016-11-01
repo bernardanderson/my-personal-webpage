@@ -2,7 +2,7 @@ import {Component}      from '@angular/core';
 import { NavService }   from './nav.service';
 
 @Component({
-    selector: 'main-body',
+    selector: 'body',
     templateUrl: 'partials/app.html',
     styleUrls: ['css/style.css'],
     providers: [ NavService ]
@@ -17,6 +17,5 @@ export class AppComponent {
     }
 
     clicked():void {
-        this.message = this.navService.getNavMessage();
     }
 }

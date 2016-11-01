@@ -9,15 +9,14 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
+var Subject_1 = require('rxjs/Subject');
 var NavService = (function () {
     function NavService() {
-        this.navMessage = "This is Nav!";
+        this.navChangeSource = new Subject_1.Subject();
+        this.navChange$ = this.navChangeSource.asObservable();
     }
-    NavService.prototype.updateNavMessage = function (newNavSelection) {
-        this.navMessage = newNavSelection;
-    };
-    NavService.prototype.getNavMessage = function () {
-        return this.navMessage;
+    NavService.prototype.announceNavChange = function (sentNavString) {
+        this.navChangeSource.next(sentNavString);
     };
     NavService = __decorate([
         core_1.Injectable(), 

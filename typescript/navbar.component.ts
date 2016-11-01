@@ -1,5 +1,5 @@
-import {Component} from '@angular/core';
-import { NavService }       from './nav.service';
+import {Component}      from '@angular/core';
+import { NavService }   from './nav.service';
 
 @Component({
     selector: 'nav-bar', 
