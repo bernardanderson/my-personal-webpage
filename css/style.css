@@ -1,11 +1,32 @@
 @import 'https://fonts.googleapis.com/css?family=Doppio+One';
 
+/* General Styling */
 body {
   box-sizing: border-box;
-  display: flex;
   min-height: 100vh;
-  flex-direction: column;
   padding: 0;
   margin: 0;
   background-color: #F1F2ED
+}
+
+.darker-green {
+  background-color: #A0A592;
+  color:  #F1F2ED;
+}
+
+/* NavBar Styling */
+.navbar-p {
+  font-family: 'Doppio One', sans-serif;
+  font-size: 30px;
+  display: inline;
+  color:  #F1F2ED;
+}
+
+/* Footer Styling */
+.footer-div {
+  padding-right: 20px;
+}
+
+.footer-p {
+  text-align: right;
 }
