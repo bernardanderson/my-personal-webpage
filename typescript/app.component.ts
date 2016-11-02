@@ -1,4 +1,4 @@
-import {Component}      from '@angular/core';
+import {Component} from '@angular/core';
 
 @Component({
     selector: 'body',
@@ -8,9 +8,7 @@ import {Component}      from '@angular/core';
 
 export class AppComponent {
 
-    message: string;
+  navItems: string[] = ["Home", "Key Projects", "Blog", "Contact Info"];
+  copyrightInfo: string = "©2016 Bernard Anderson";
 
-    selectedNavItem(navSelection: string):void {
-        this.message = navSelection;
-    }
 }

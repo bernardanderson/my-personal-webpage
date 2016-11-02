@@ -1,8 +1,16 @@
-<nav-bar (selectedNavItem)="selectedNavItem($event)"></nav-bar>
+<nav>
+  <div class="ui attached segment darker-green">
+    <p class="navbar-p">Bernard Anderson.me</p>
+  </div>
+  <div class="ui bottom attached buttons">
+    <div *ngFor="let item of navItems" class="ui darker-green button">{{item}}</div>
+  </div>
+</nav>
 
-<div>
-    <p>Hello, you are receiving {{message}} from the navbar.</p>
-</div>
+  <main-display></main-display>
 
-<footer-bar></footer-bar>
-
+<footer class="page-footer footer-style">
+    <div class="darker-green footer-div">
+      <p class="footer-p">{{copyrightInfo}}</p>
+    </div>
+</footer>
