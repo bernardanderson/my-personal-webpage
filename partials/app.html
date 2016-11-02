@@ -3,11 +3,11 @@
     <p class="navbar-p">Bernard Anderson.me</p>
   </div>
   <div class="ui bottom attached buttons">
-    <div *ngFor="let item of navItems" class="ui darker-green button">{{item}}</div>
+    <div *ngFor="let item of navItems" class="ui darker-green button" routerLink="/{{item.route}}">{{item.text}}</div>
   </div>
 </nav>
 
-  <main-display></main-display>
+<router-outlet></router-outlet>
 
 <footer class="page-footer footer-style">
     <div class="darker-green footer-div">
