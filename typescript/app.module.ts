@@ -3,14 +3,16 @@ import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule }  from '@angular/router';
 // My Component Imports
 import { AppComponent }     from './app.component';
-import { AppRoutes }     from './app.routes';
 import { HomeDisplayComponent }  from './homedisplay.component';
 import { ContactDisplayComponent }  from './contactdisplay.component';
 
 @NgModule({
   imports:      [ 
     BrowserModule,
-    RouterModule.forRoot(AppRoutes) 
+    RouterModule.forRoot([
+      { path: '', component: HomeDisplayComponent },
+      { path: 'contact', component: ContactDisplayComponent },
+    ]) 
   ],
   declarations: [ 
     AppComponent, 
