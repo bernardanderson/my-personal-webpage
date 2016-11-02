@@ -8,7 +8,23 @@ import {Component} from '@angular/core';
 
 export class AppComponent {
 
-  navItems: string[] = ["Home", "Key Projects", "Blog", "Contact Info"];
+  navItems: Array<Object> = [
+    { 
+      text: "Home",
+      route: ""
+    },
+    { 
+      text: "Key Projects",
+      route: "projects"
+    },
+    {
+      text: "Blog",
+      route: "blog"
+    },
+    {
+      text: "Contact Info",
+      route: "contact"
+    }]
   copyrightInfo: string = "©2016 Bernard Anderson";
 
 }
