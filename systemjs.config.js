@@ -22,6 +22,7 @@
       '@angular/router': 'npm:@angular/router/bundles/router.umd.js',
       '@angular/forms': 'npm:@angular/forms/bundles/forms.umd.js',
       // other libraries
+      'ng-semantic':               'npm:ng-semantic',
       'rxjs':                      'npm:rxjs',
       'angular-in-memory-web-api': 'npm:angular-in-memory-web-api',
     },
@@ -33,6 +34,10 @@
       },
       rxjs: {
         defaultExtension: 'js'
+      },
+      'ng-semantic': {
+          main: './ng-semantic.js',
+          defaultExtension: 'js'
       },
       'angular-in-memory-web-api': {
         main: './index.js',

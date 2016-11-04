@@ -1,6 +1,8 @@
 import { NgModule }      from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule }  from '@angular/router';
+import { NgSemanticModule } from 'ng-semantic';
+
 // My Component Imports
 import { AppComponent }     from './app.component';
 import { HomeViewComponent }  from './homeview.component';
@@ -11,6 +13,7 @@ import { ContactViewComponent }  from './contactview.component';
 @NgModule({
   imports:      [ 
     BrowserModule,
+    NgSemanticModule,
     RouterModule.forRoot([
       { path: '', component: HomeViewComponent },
       { path: 'projects', component: ProjectViewComponent },
