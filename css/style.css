@@ -17,7 +17,7 @@ body {
 /* Styling for the Main Body (Main Display Panel) */
 .output-display {
   width: 100vw;
-  height: 82vh;
+  /*height: 82vh;*/
 }
 
 /* NavBar Styling */
