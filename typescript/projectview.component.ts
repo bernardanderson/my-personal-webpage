@@ -11,32 +11,20 @@ declare var $:any;
 
 export class ProjectViewComponent {
   
-  // currentImageElement = 0;
-  
-  // checkyourselfImages = [
-  //   "AccountLedger.png",
-  //   "SingleItem.png",
-  //   "CheckBuilder.png",
-  //   "AccountExpend.png"
-  // ]
+  checkyourselfImages = [
+    "AccountLedger.png",
+    "SingleItem.png",
+    "CheckBuilder.png",
+    "AccountExpend.png"
+  ]
 
   ngOnInit(){
     $('.shape').shape();
-    // let pictureTimer = Observable.timer(3000, 6000);
-    // pictureTimer.subscribe(t => this.pictureChange());
   }
 
   flipper() {
     $('.shape').shape('flip left');
   }
-
-  // pictureChange() {
-  //   if (this.currentImageElement === 3) {
-  //     this.currentImageElement = 0;
-  //   } else {
-  //     this.currentImageElement++;
-  //   }
-  // }
 
   hover():void {
       $('.dimmer').dimmer('toggle');
