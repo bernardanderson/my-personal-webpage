@@ -1,5 +1,7 @@
 import {Component} from '@angular/core';
 
+declare var $:any;
+
 @Component({
     selector: 'body',
     templateUrl: 'partials/app.html',
@@ -7,6 +9,15 @@ import {Component} from '@angular/core';
 })
 
 export class AppComponent {
+  
+  ngOnInit():void {
+
+    $(window).on("scroll", function() {
+        $(".nav").toggleClass("shrink", $(this).scrollTop() > 20)
+    });
+  
+  }
+
 
   navItems: Array<Object> = [
     { text: "Home", route: "" },

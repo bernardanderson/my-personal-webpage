@@ -1,5 +1,5 @@
 .main-dimmer {
-    width: 50vw;
+    width: 70vw;
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 30px;
@@ -8,10 +8,11 @@
 p {
     padding: 0 30px 20px 30px;
     margin-bottom: 0;
+    font-size: 1.4em;
 }
 
 .tech-badge-imgs {
     display: inline;
     margin: 10px 10px 20px 10px;
-    width: 50px;
+    width: 60px;
 }

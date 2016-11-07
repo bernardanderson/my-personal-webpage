@@ -11,26 +11,19 @@ declare var $:any;
 
 export class ProjectViewComponent {
   
-  checkyourselfImages = [
-    "AccountLedger.png",
-    "SingleItem.png",
-    "CheckBuilder.png",
-    "AccountExpend.png"
-  ]
-
-  ngOnInit(){
+  ngOnInit():void {
     $('.shape').shape();
   }
 
-  flipper() {
-    $('.shape').shape('flip left');
+  flipper(sentClass):void {
+      $(`.shape.${sentClass}`).shape('flip left');
+    }
+
+  hover(sentClass):void {
+      $(`.dimmer.${sentClass}`).dimmer('toggle');
   }
 
-  hover():void {
-      $('.dimmer').dimmer('toggle');
-  }
-
-  blur():void {
-      $('.dimmer').dimmer('toggle');
+  blur(sentClass):void {
+      $(`.dimmer.${sentClass}`).dimmer('toggle');
   }
 }

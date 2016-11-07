@@ -3,29 +3,47 @@
 /* General Styling */
 body {
   box-sizing: border-box;
-  min-height: 100vh;
-  padding: 0;
-  margin: 0;
   background-color: #F1F2ED
 }
 
 .darker-green {
-  background-color: #A0A592;
-  color:  #F1F2ED;
+  background-color: rgba(160, 165, 146, 0.2);
+  color:  rgb(160, 165, 146);
+  padding-top: 12px;
+  transition: all 0.4s ease;
 }
 
 /* Styling for the Main Body (Main Display Panel) */
 .output-display {
   width: 100vw;
-  /*height: 82vh;*/
 }
 
 /* NavBar Styling */
 .navbar-p {
   font-family: 'Doppio One', sans-serif;
-  font-size: 30px;
-  display: inline;
+  margin-left: 20px;
+}
+
+/* Fixes nav bar to top */
+.nav {
+  position: fixed;
+  top: 0;
+  height: 60px;
+  width: 100vw;
+  z-index: 10000;
+}
+
+/* Dummy Div to give spacing to content below it */
+.spacer {
+  height: 100px;
+}
+
+.shrink {
+  background-color: #A0A592;
   color:  #F1F2ED;
+  height: 60px;
+  transition: all 0.4s ease;
+  z-index: 10000;
 }
 
 /* Footer Styling */

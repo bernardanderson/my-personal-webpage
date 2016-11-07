@@ -1,11 +1,8 @@
-<nav>
-  <div class="ui attached segment darker-green">
-    <p class="navbar-p">Bernard Anderson.me</p>
-  </div>
-  <div class="ui bottom attached buttons">
-    <div *ngFor="let item of navItems" class="ui darker-green button" routerLink="/{{item.route}}">{{item.text}}</div>
-  </div>
-</nav>
+<div class="ui seven wide grid darker-green nav">
+    <p class="five wide column navbar-p">Bernard Anderson.me</p>
+    <p class="two wide column" *ngFor="let item of navItems" routerLink="/{{item.route}}">{{item.text}}</p>
+</div>
+<div class="spacer"></div>
 
 <div class="output-display">
   <router-outlet></router-outlet>
