@@ -6,7 +6,6 @@ import { RouterModule }  from '@angular/router';
 import { AppComponent }     from './app.component';
 import { HomeViewComponent }  from './homeview.component';
 import { ProjectViewComponent }  from './projectview.component';
-import { BlogViewComponent }  from './blogview.component';
 import { ContactViewComponent }  from './contactview.component';
 
 @NgModule({
@@ -15,7 +14,6 @@ import { ContactViewComponent }  from './contactview.component';
     RouterModule.forRoot([
       { path: '', component: HomeViewComponent },
       { path: 'projects', component: ProjectViewComponent },
-      { path: 'blog', component: BlogViewComponent },
       { path: 'contact', component: ContactViewComponent },
     ]) 
   ],
@@ -23,7 +21,6 @@ import { ContactViewComponent }  from './contactview.component';
     AppComponent, 
     HomeViewComponent,
     ProjectViewComponent,
-    BlogViewComponent,
     ContactViewComponent
   ],
   bootstrap: [ AppComponent ]

@@ -10,21 +10,22 @@ declare var $:any;
 
 export class AppComponent {
   
-  ngOnInit():void {
+  navItems: Array<Object> = [
+    { text: "Home", route: "", UIIcon: "Home icon" },
+    { text: "Key Projects", route: "projects", UIIcon: "Folder Ouline icon" },
+    { text: "Contact Info", route: "", clickFunction: "contactModal()", UIIcon: "Info icon" }]
 
-    $(window).on("scroll", function() {
-        $(".nav").toggleClass("shrink", $(this).scrollTop() > 20)
-    });
-  
+  copyrightInfo: string = "©2016 Bernard Anderson";
+
+  // This inits the jQuery class addition when the main page is scrolled greater than 10px
+  ngOnInit():void {
+    $('.ui.modal').modal();
+  }
+
+  contactModal(): void {
+    $('.ui.modal').modal('show');
   }
 
 
-  navItems: Array<Object> = [
-    { text: "Home", route: "" },
-    { text: "Key Projects", route: "projects" },
-    { text: "Blog", route: "blog" },
-    { text: "Contact Info", route: "contact" }]
-
-  copyrightInfo: string = "©2016 Bernard Anderson";
 
 }

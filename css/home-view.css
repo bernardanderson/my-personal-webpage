@@ -1,4 +1,32 @@
+.box-head, .box-sub {
+    display: block;
+    font-family: 'Donegal One', serif;
+    font-size: 4rem;
+    line-height: 1rem;
+    text-align: center;
+    margin: 0 auto 0 auto;
+}
 
-p {
-    font-size: 2em;
+.box-sub {
+    font-size: 2rem;
+    /*font-family: 'Lobster', cursive;*/
+}
+
+.header-bar {
+    background: url("media/general/green-forest.jpg") no-repeat;
+    background-size: cover;
+    color: rgb(255, 255, 255);
+    height: 300px;
+    padding-top: 100px;
+}
+
+.synopsis {
+    font-size: 1.3rem;
+    padding-left: 10vw; 
+    padding-right: 10vw;
+    text-align: justify;
+}
+
+.frontbadge {
+    padding: 25px;
 }

@@ -1,4 +1,4 @@
-@import 'https://fonts.googleapis.com/css?family=Doppio+One';
+@import url('https://fonts.googleapis.com/css?family=Donegal+One|Lalezar');
 
 /* General Styling */
 body {
@@ -6,11 +6,9 @@ body {
   background-color: #F1F2ED
 }
 
-.darker-green {
-  background-color: rgba(160, 165, 146, 0.2);
-  color:  rgb(160, 165, 146);
-  padding-top: 12px;
-  transition: all 0.4s ease;
+.menu-bar {
+  position: fixed;
+  z-index: 10000;
 }
 
 /* Styling for the Main Body (Main Display Panel) */
@@ -18,39 +16,12 @@ body {
   width: 100vw;
 }
 
-/* NavBar Styling */
-.navbar-p {
-  font-family: 'Doppio One', sans-serif;
-  margin-left: 20px;
-}
-
-/* Fixes nav bar to top */
-.nav {
-  position: fixed;
-  top: 0;
-  height: 60px;
-  width: 100vw;
-  z-index: 10000;
-}
-
 /* Dummy Div to give spacing to content below it */
 .spacer {
-  height: 100px;
-}
-
-.shrink {
-  background-color: #A0A592;
-  color:  #F1F2ED;
   height: 60px;
-  transition: all 0.4s ease;
-  z-index: 10000;
 }
 
-/* Footer Styling */
-.footer-div {
-  padding-right: 20px;
-}
-
-.footer-p {
-  text-align: right;
+/* Formatting Footer Links */
+a {
+  color: inherit;
 }

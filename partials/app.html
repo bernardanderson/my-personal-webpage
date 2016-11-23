@@ -1,15 +1,104 @@
-<div class="ui seven wide grid darker-green nav">
-    <p class="five wide column navbar-p">Bernard Anderson.me</p>
-    <p class="two wide column" *ngFor="let item of navItems" routerLink="/{{item.route}}">{{item.text}}</p>
+<!--Menubar Content-->
+<div class="ui grid container menu-bar">
+  <div class="row">
+    <div class="ui right floated main menu">
+      <a class="bug popup icon item" routerLink="">
+        <i class="Home icon" style="margin-right: 5px;"></i><p>Home</p>
+      </a>
+      <a class="bug popup icon item" routerLink="projects">
+        <i class="Folder Ouline icon" style="margin-right: 5px;"></i><p>Key Projects</p>
+      </a>
+      <a class="bug popup icon item" (click)="contactModal()">
+        <i class="Home icon" style="margin-right: 5px;"></i><p>Contact Info</p>
+      </a>
+    </div>
+  </div>
 </div>
 <div class="spacer"></div>
 
+<!--Main body display section-->
 <div class="output-display">
   <router-outlet></router-outlet>
 </div>
 
+<!--Universal Footer Content-->
 <footer class="page-footer footer-style">
-    <div class="darker-green footer-div">
-      <p class="footer-p">{{copyrightInfo}}</p>
+    <div class="ui grid container">
+      <div class="row">
+        <div class="six wide column">
+          <p class="footer-p">{{copyrightInfo}}</p>
+        </div>
+        <div class="five wide column">
+          <a href="https://github.com/bernardanderson">
+            <i class="large Github Square icon"></i>
+            <span>github.com/bernardanderson</span>
+          </a>
+        </div>
+        <div class="five wide column">
+          <a href="https://www.linkedin.com/in/andersonbm">
+            <i class="large Linkedin Square icon"></i>
+            <span>www.linkedin.com/in/andersonbm</span>
+          </a>
+        </div>
+      </div>
     </div>
 </footer>
+
+<!--Content for the "Contact Info" Modal -->
+<div class="ui modal">
+  <i class="close icon"></i>
+  <div class="header">
+    Bernie Anderson's Contact Info
+  </div>
+  <div class="image content">
+    <div class="ui medium image">
+      <img src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAlvAAAAJDUwYTVhOGJlLTE1YjItNDVlOC05N2Q4LTk0MTkzZmM5MGMyMw.jpg">
+    </div>
+    <div class="description">
+      <div class="ui header">You can contact me any number of ways...</div>
+      <div class="ui grid container">
+        <div class="row">
+          <div class="six wide column">
+            <a href="tel:(615)504-6037" target="_blank">
+              <i class="large Text Telephone icon"></i>
+              <span>(615)504-6037 (Nashville, TN)</span>
+            </a>
+          </div>
+          <div class="seven wide column">
+            <a href="mailto:bernard.anderson@gmail.com" target="_blank">
+              <i class="large Mail Outline icon"></i>
+              <span>bernard.anderson@gmail.com</span>
+            </a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="six wide column">
+            <a href="https://github.com/bernardanderson" target="_blank">
+              <i class="large Github Square icon"></i>
+              <span>github.com/bernardanderson</span>
+            </a>
+          </div>
+          <div class="seven wide column">
+            <a href="https://www.linkedin.com/in/andersonbm" target="_blank">
+              <i class="large Linkedin Square icon"></i>
+              <span>www.linkedin.com/in/andersonbm</span>
+            </a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="six wide column">
+            <a href="media/resume/resume.pdf" target="_blank">
+              <i class="large File Pdf Outline icon"></i>
+              <span>My Resume</span>
+            </a>
+          </div>
+          <div class="seven wide column">
+              <i class="large Smile icon"></i>
+              <span>I look forward to hearing from you!</span>
+          </div>          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--End of "Contact Info" Modal Content-->
