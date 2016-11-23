@@ -1,32 +1,27 @@
-@import 'https://fonts.googleapis.com/css?family=Doppio+One';
+@import url('https://fonts.googleapis.com/css?family=Donegal+One|Lalezar');
 
 /* General Styling */
 body {
   box-sizing: border-box;
-  min-height: 100vh;
-  padding: 0;
-  margin: 0;
   background-color: #F1F2ED
 }
 
-.darker-green {
-  background-color: #A0A592;
-  color:  #F1F2ED;
+.menu-bar {
+  position: fixed;
+  z-index: 10000;
 }
 
-/* NavBar Styling */
-.navbar-p {
-  font-family: 'Doppio One', sans-serif;
-  font-size: 30px;
-  display: inline;
-  color:  #F1F2ED;
+/* Styling for the Main Body (Main Display Panel) */
+.output-display {
+  width: 100vw;
 }
 
-/* Footer Styling */
-.footer-div {
-  padding-right: 20px;
+/* Dummy Div to give spacing to content below it */
+.spacer {
+  height: 60px;
 }
 
-.footer-p {
-  text-align: right;
+/* Formatting Footer Links */
+a {
+  color: inherit;
 }
