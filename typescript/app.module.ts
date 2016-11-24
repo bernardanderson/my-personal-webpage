@@ -14,7 +14,6 @@ import { ContactViewComponent }  from './contactview.component';
     RouterModule.forRoot([
       { path: '', component: HomeViewComponent },
       { path: 'projects', component: ProjectViewComponent },
-      { path: 'contact', component: ContactViewComponent },
     ]) 
   ],
   declarations: [ 

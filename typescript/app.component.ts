@@ -25,7 +25,4 @@ export class AppComponent {
   contactModal(): void {
     $('.ui.modal').modal('show');
   }
-
-
-
 }

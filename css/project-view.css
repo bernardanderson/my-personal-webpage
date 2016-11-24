@@ -1,8 +1,6 @@
 .main-dimmer {
-    width: 60vw;
     margin-right: auto;
     margin-left: auto;
-    margin-bottom: 30px;
 }
 
 p {
@@ -15,4 +13,14 @@ p {
     display: inline;
     margin: 10px 10px 20px 10px;
     width: 60px;
+}
+
+img {
+    max-width: 60vw;
+    margin: 10px auto 10px auto;
+}
+
+.description {
+    text-align: center;
+    padding: 10px
 }
