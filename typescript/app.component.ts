@@ -1,6 +1,8 @@
-import {Component} from '@angular/core';
+import {Component, enableProdMode} from '@angular/core';
 
 declare var $:any;
+
+enableProdMode();
 
 @Component({
     selector: 'body',
