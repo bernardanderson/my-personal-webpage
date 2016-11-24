@@ -11,13 +11,30 @@ declare var $:any;
 
 export class ProjectViewComponent {
   
-  ngOnInit():void {
-    $('.shape').shape();
-  }
+  constructor() {}
 
-  flipper(sentClass):void {
-      $(`.shape.${sentClass}`).shape('flip left');
-    }
+  chequeYourselfImgArray: string[] = [
+      "media/chequey/CheckBuilder.png",
+      "media/chequey/SingleItem.png",
+      "media/chequey/AccountExpend.png",
+      "media/chequey/AccountLedger.png"
+  ];
+
+  gauntletImgArray: string[] = [
+      "media/gauntlet/gauntbattle.png",
+      "media/gauntlet/gauntwin.png",
+      "media/gauntlet/gauntchoose.png"
+  ];
+
+  eyeNetImgArray: string[] = [
+      "",
+      "",
+      ""
+  ];
+
+  chequeYourselfDisplayImg = this.chequeYourselfImgArray[0];
+  gauntletDisplayImg = this.gauntletImgArray[0];
+  eyeNetDisplayImg = this.eyeNetImgArray[0];
 
   hover(sentClass):void {
       $(`.dimmer.${sentClass}`).dimmer('toggle');
@@ -25,5 +42,39 @@ export class ProjectViewComponent {
 
   blur(sentClass):void {
       $(`.dimmer.${sentClass}`).dimmer('toggle');
+  }
+
+  changeImage(sentProject, sentDirection): void {
+    switch (sentProject) {
+        case "chequeYourself":
+            if (sentDirection === "next") {
+                this.chequeYourselfImgArray.push(this.chequeYourselfImgArray.shift());
+            } else {
+                this.chequeYourselfImgArray.unshift(this.chequeYourselfImgArray.pop());
+            }
+            this.chequeYourselfDisplayImg = this.chequeYourselfImgArray[0];
+            break;
+
+        case "gauntlet":
+            if (sentDirection === "next") {
+                this.gauntletImgArray.push(this.gauntletImgArray.shift());
+            } else {
+                this.gauntletImgArray.unshift(this.gauntletImgArray.pop());
+            }
+            this.gauntletDisplayImg = this.gauntletImgArray[0];
+            break;
+
+        case "eyeNet":
+            if (sentDirection === "next") {
+                this.eyeNetImgArray.push(this.eyeNetImgArray.shift());
+            } else {
+                this.eyeNetImgArray.unshift(this.eyeNetImgArray.pop());
+            }
+            this.eyeNetDisplayImg = this.eyeNetImgArray[0];
+            break;     
+        default: 
+            console.log("Error");
+            break;   
+    }
   }
 }
