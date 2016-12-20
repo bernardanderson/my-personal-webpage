@@ -12,8 +12,9 @@ import { ContactViewComponent }  from './contactview.component';
   imports:      [ 
     BrowserModule,
     RouterModule.forRoot([
-      { path: '', component: HomeViewComponent },
+      { path: '', component: HomeViewComponent, pathMatch: 'full' },
       { path: 'projects', component: ProjectViewComponent },
+      { path: '**', redirectTo: '' },
     ]) 
   ],
   declarations: [ 
