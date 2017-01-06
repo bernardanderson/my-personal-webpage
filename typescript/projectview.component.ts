@@ -27,9 +27,10 @@ export class ProjectViewComponent {
   ];
 
   eyeNetImgArray: string[] = [
-      "",
-      "",
-      ""
+      "media/eyes/eyes1.png",
+      "media/eyes/eyes2.png",
+      "media/eyes/eyes3.png",
+      "media/eyes/eyes4.png"
   ];
 
   chequeYourselfDisplayImg = this.chequeYourselfImgArray[0];

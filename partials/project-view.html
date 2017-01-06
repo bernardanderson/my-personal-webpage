@@ -13,6 +13,85 @@
 
     <div class="ui fluid card">
       <div class="content">
+        <div class="header">Back-end Capstone Project: "Eyes On The Net"</div>
+        <div class="meta">Hover over image for a detailed description</div>
+      </div>
+      <div class="two ui buttons">
+          <button class="ui button" (click)="changeImage('eyeNet', 'previous')">
+            <i class="Angle Double Left icon"></i>
+            Previous Image
+          </button>
+          <button class="ui button" (click)="changeImage('eyeNet', 'next')">
+            Next Image
+            <i class="Angle Double Right icon"></i>
+          </button>
+      </div>
+
+      <div class="image main-dimmer" (mouseenter)="hover('eyeNetDimmer');" (mouseleave)="blur('eyeNetDimmer');">
+        
+        <div class="ui dimmer eyeNetDimmer">
+          <div class="content">
+            <div class="center">
+            <h2 class="ui inverted header">"Eyes On The Net"</h2>
+            <p>Eyes On The Net is a web application for securely interfacing with and displaying local and remote 
+              webcams which otherwise might have poor or no standalone security. Snapshots are handled server-side for 
+              later retrieval in a DVR-type fashion and camera locations can be graphically viewed via Google Maps.<br/><br/> It was written 
+              using .NET Core (in Linux), Angular 2 with TypeScript, a standalone MySQL server for Db storage, JSON Web Tokens for user 
+              authentication and styled using Semantic-Ui.
+            </p>
+              <span>Technologies Used</span>
+              <div class="badge-div">
+                <img class="tech-badge-imgs" src="./media/ti/html5.png">
+                <img class="tech-badge-imgs" src="./media/ti/css3.png">
+                <img class="tech-badge-imgs" src="./media/ti/jquery.png">
+                <img class="tech-badge-imgs" src="./media/ti/semanticui.png">
+                <img class="tech-badge-imgs" src="./media/ti/angular2.png">
+                <img class="tech-badge-imgs" src="./media/ti/jwt.png">
+                <img class="tech-badge-imgs" src="./media/ti/mysql.png">
+                <img class="tech-badge-imgs" src="./media/ti/dotnetcore.png">
+              </div>
+            </div>
+          </div>
+        </div>
+          <img [src]="eyeNetDisplayImg">
+      </div>
+
+      <div class="description">
+        <div class="ui large buttons">
+        <a href="https://github.com/bernardanderson/EyesOnTheNet_Backend_NSS_BackendCapstone" target="_blank">
+          <div class="ui blue button">
+            <i class="github square icon"></i>
+            Back-end GitHub Repo
+          </div>
+        </a>
+        <div class="or"></div>
+        <a href="https://github.com/bernardanderson/EyesOnTheNet_Frontend_NSS_BackendCapstone" target="_blank">
+          <div class="ui blue button">
+            <i class="github square icon"></i>
+            Front-end GitHub Repo
+          </div>
+        </a>
+        <div class="or"></div>
+        <a href="http://www.eyesonthenet.com" target="_blank">
+          <div class="ui green button">
+            <i class="browser icon"></i>
+            Deployed Website
+          </div>
+        </a>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<div class="row">
+  <div class="ui eight column grid">
+
+    <div class="ui fluid card">
+      <div class="content">
         <div class="header">Front-end Capstone Project: "Cheque-Yourself!"</div>
         <div class="meta">Hover over image for a detailed description</div>
       </div>
@@ -135,131 +214,3 @@
   </div>
 </div>
 
-<!--<div class="row">
-  <div class="ui eight column grid">
-
-    <div class="ui fluid card">
-      <div class="content">
-        <div class="header">Back-end Capstone Project: "EyeNet"</div>
-        <div class="meta">Hover over image for a detailed description</div>
-      </div>
-      <div class="two ui buttons">
-          <button class="ui button" (click)="changeImage('eyeNet', 'previous')">
-            <i class="Angle Double Left icon"></i>
-            Previous Image
-          </button>
-          <button class="ui button" (click)="changeImage('eyeNet', 'next')">
-            Next Image
-            <i class="Angle Double Right icon"></i>
-          </button>
-      </div>
-
-      <div class="image main-dimmer" (mouseenter)="hover('eyeNetDimmer');" (mouseleave)="blur('eyeNetDimmer');">
-        
-        <div class="ui dimmer eyeNetDimmer">
-          <div class="content">
-            <div class="center">
-            <h2 class="ui inverted header">"EyeNet"</h2>
-            <p>One of the more fun Front-End group projects was "Gauntlet", a javascript excercise which exposed the 
-              students to multiple objects utilizing prototypical inheritence for property creation and modification.
-              The user creates a player, selects a "class" and a weapon in order to engage in a 1-on-1 fight with an 
-              Orc.<br/><br/>
-            After completing the javascript portion, our group had fun with the project by adding a 1980's 8-bit theme
-              as well as CSS animations for the actual battle scene.</p>
-              <span>Technologies Used</span>
-              <div class="badge-div">
-                <img class="tech-badge-imgs" src="./media/ti/html5.png">
-                <img class="tech-badge-imgs" src="./media/ti/css3.png">
-                <img class="tech-badge-imgs" src="./media/ti/javascript.png">
-                <img class="tech-badge-imgs" src="./media/ti/jquery.png">
-              </div>
-            </div>
-          </div>
-        </div>
-          <img [src]="eyeNetDisplayImg">
-      </div>
-
-      <div class="description">
-        <div class="ui large buttons">
-        <a href="https://github.com/bernardanderson/gauntlet-destroy-in-ators" target="_blank">
-          <div class="ui blue button">
-            <i class="github square icon"></i>
-            GitHub Repo
-          </div>
-        </a>
-        <div class="or"></div>
-        <a href="#" target="_blank">
-          <div class="ui green button">
-            <i class="browser icon"></i>
-            Deployed Website
-          </div>
-        </a>
-      </div>
-      </div>
-    </div>
-  </div>
-</div>-->
-
-
-
-
-
-
-
-
-
-
-
-<!--<h3 (click)="flipper('gl');" class="ui centered horizontal divider header">
-  Front-End Group Project: "Gauntlet"
-  <div class="sub header">Click Here For Addtional Screen Shots</div>
-  <div class="sub header">Hover over image for a more detailed description</div>
-</h3>
-
-<div class="main-dimmer" (mouseenter)="hover('gl');" (mouseleave)="blur('gl');">
-  <div class="ui dimmer gl">
-    <div class="content">
-      <div class="center">
-        <h2 class="ui inverted header">"Gauntlet"</h2>
-        <p>One of the more fun Front-End group projects was "Gauntlet", a javascript excercise which exposed the 
-          students to multiple objects utilizing prototypical inheritence for property creation and modification.
-          The user creates a player, selects a "class" and a weapon in order to engage in a 1-on-1 fight with an 
-          Orc.<br/><br/>
-        After completing the javascript portion, our group had fun with the project by adding a 1980's 8-bit theme
-          as well as CSS animations for the actual battle scene.</p>
-          <span>Technologies Used</span>
-          <div class="badge-div">
-            <img class="tech-badge-imgs" src="./media/ti/html5.png">
-            <img class="tech-badge-imgs" src="./media/ti/css3.png">
-            <img class="tech-badge-imgs" src="./media/ti/javascript.png">
-            <img class="tech-badge-imgs" src="./media/ti/jquery.png">
-          </div>
-        <a href="https://github.com/bernardanderson/gauntlet-destroy-in-ators">
-          <div class="ui button">
-            <i class="github square icon"></i>
-            GitHub Repo
-          </div>
-        </a>
-        <a href="#">
-          <div class="ui button">
-            <i class="browser icon"></i>
-            Deployed Website
-          </div>
-        </a>
-      </div>
-    </div>
-  </div>
-  <div class="ui shape gl">
-    <div class="sides">
-      <div class="active side">
-        <img class="ui rounded image" src="/media/gauntlet/gauntbattle.png">
-        </div>
-      <div class="side">
-        <img class="ui rounded image" src="/media/gauntlet/gauntwin.png">
-      </div>
-      <div class="side">
-        <img class="ui rounded image" src="/media/gauntlet/gauntchoose.png">
-      </div>
-    </div>
-  </div>
-</div>-->
